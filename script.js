@@ -6,8 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
         btn = document.querySelector('.police-btn'),
       policeCookie = getCookie('police');
     
-    if(policeCookie == 'true') {
-      police.classList.add('hide');
+    if(policeCookie !== 'true') {
+      police.classList.remove('hide');
     }
     
     btn.addEventListener('click', () => {
